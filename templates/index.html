@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    {% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Krishnaprasad</title>
+<meta name="keywords" content="Mutnunus Twitter Puzzle" />
+<meta name="description" content="Multunus Twitter Solution By Krishna" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'twitter/puzzle.css' %}" />
+
+	
+<!--	<link rel="shortcut icon" type="image/x-icon" href="images/SL logo1.ico" />    -->
+        
+</head>
+
+
+<body>
+
+
+
+      <div id="templatemo_wrapper">
+        
+	      <div id="templatemo_header">
+	
+	            <br><br>
+	
+		<center><h1><p>Just another Twitter Puzzle Solution</p></h1></center>
+		
+	
+	        </div>
+
+
+	 
+	 
+	 <div id="tweethandles">
+
+         {% if users %}
+
+             {% for uid,url in users.items %}
+                 <div id="circular" style="background: url( {{ url }}) no-repeat; background-size: contain;" ><a href="{{ uid }}"><img src="{{ url }}" height="100px" width="100px"/></a></div>
+             {% endfor %}
+
+         {% else %}
+             <p> ELSE </p>
+
+
+         {% endif %}
+	</div>
+      </div>		
+
+    
+	
+   
+	
+<div class="cleaner"></div>
+</div>
+
+    
+
+</body>
+
+</html>
