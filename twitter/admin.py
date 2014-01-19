@@ -1,6 +1,8 @@
 from twitter.models import index
 from twitter.models import result
 from django.contrib import admin
+from twitter.models import UserDetail
+from twitter.models import RetweetersUserDetail
 
 
 class details(admin.ModelAdmin):
@@ -25,3 +27,7 @@ class detailsresult(admin.ModelAdmin):
 
     ]
 admin.site.register(result,detailsresult)
+
+admin.site.register(UserDetail)
+
+admin.site.register(RetweetersUserDetail)

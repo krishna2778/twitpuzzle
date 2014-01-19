@@ -38,8 +38,8 @@
 
          {% if users %}
 
-             {% for uid,url in users.items %}
-                 <div id="circular" style="background: url( {{ url }}) no-repeat; background-size: contain;" ><a href="{{ uid }}"><img src="{{ url }}" height="100px" width="100px"/></a></div>
+             {% for user_id,user_image_url in users.items %}
+                 <div id="circular" style="background: url( {{ user_image_url }}) no-repeat; background-size: contain;" ><a href="{{user_id}}"><img src="{{ user_image_url }}" height="100px" width="100px"/></a></div>
              {% endfor %}
 
          {% else %}

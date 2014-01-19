@@ -60,141 +60,199 @@ background:url(images/backlogin.png) repeat;
 
 
 
-/* Select pages css code */	
+/* Select pages css code */
+
 
 #selected_handle
 {
-margin-top: 20px;
-margin-left:-130px;	
+    margin-top: 20px;
+    margin-left:-130px;
 }
 
 #userimg
 {
-float:left;
-	margin-left:0px;
-	margin-top:20px;
-	width: 125px;
-	height: 125px;
-	border-radius: 125px;
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
+    position:absolute;
+    margin-top:200px;
+    margin-left:500px;
+    width: 305px;
+    height: 305px;
+    border-radius: 305px;
+    -webkit-border-radius: 305px;
+    -moz-border-radius: 305px;
 
-	background-size: contain;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 #userimg img {
-	opacity: 0;
-	filter: alpha(opacity=0);
-	}
-
-
-#dotted
-{
-    float:left;
-    margin-top:40px;
-    margin-left:-30px;
-}
-
-#handle_status
-{
-    margin-top:-15px;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 
-#first
-{
-    float:left;
-    margin-left:-50px;
-    margin-top:-15px;
-}
+
 
 #id1 {
     float:left;
-    margin-left:40px;
-    margin-top:40px;
+    position:absolute;
+    margin-left:470px;
+    margin-top:120px;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
-    background: url(https://pbs.twimg.com/profile_images/1281767185/product_logo_256.png) no-repeat;
     background-size: contain;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
-
-
-#s1{
-    margin-left:80px;
-    margin-top:20px;
-
-
-}
-
 
 #id2 {
     float:left;
-    margin-left:70px;
-    margin-top:-30px;
+    position:absolute;
+    margin-left:390px;
+    margin-top:230px;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
-    background: url(https://pbs.twimg.com/profile_images/1281767185/product_logo_256.png) no-repeat;
-    background-size: contain;
+
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-#s2{
-    margin-left:130px;
-    margin-top:10px;
 }
 
 #id3 {
     float:left;
-    margin-left:110px;
-    margin-top:-30px;
-
+    position:absolute;
+    margin-left:390px;
+    margin-top:370px;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
-    background: url(https://pbs.twimg.com/profile_images/1281767185/product_logo_256.png) no-repeat;
-    background-size: contain;
+
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-
-#s3{
-    margin-left:250px;
-    margin-top:70px;
 }
 
 #id4 {
     float:left;
-    margin-left:210px;
-    margin-top:-20px;
-
+    position:absolute;
+    margin-left:470px;
+    margin-top:490px;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
-    background: url(https://pbs.twimg.com/profile_images/1281767185/product_logo_256.png) no-repeat;
     background-size: contain;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
+#id5 {
+    float:left;
+    position:absolute;
+    margin-left:600px;
+    margin-top:530px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#id6 {
+    float:left;
+    position:absolute;
+    margin-left:740px;
+    margin-top:500px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+
+#id7 {
+    float:left;
+    position:absolute;
+    margin-left:820px;
+    margin-top:370px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#id8 {
+    float:left;
+    position:absolute;
+    margin-left:820px;
+    margin-top:230px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#id9 {
+    float:left;
+    position:absolute;
+    margin-left:740px;
+    margin-top:120px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#id10 {
+    float:left;
+    position:absolute;
+    margin-left:600px;
+    margin-top:80px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: contain;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
 
 
 

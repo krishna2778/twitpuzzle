@@ -17,3 +17,15 @@ class result(models.Model):
     followers_count=models.IntegerField()
     def __unicode__(self):
         return self.retweeter_image_url
+
+
+
+class UserDetail(models.Model):
+    image_url=models.CharField(max_length=1000)
+    twitter_id=models.IntegerField()
+    latest_tweet_id=models.BigIntegerField()
+
+class RetweetersUserDetail(models.Model):
+    selected_users_id=models.IntegerField()
+    retweeters_image_url=models.CharField(max_length=1000)
+    retweeters_followers_number=models.IntegerField()

@@ -1,7 +1,8 @@
 from django.conf.urls import patterns, include, url
-
 from django.contrib import admin
 admin.autodiscover()
+from apscheduler.scheduler import Scheduler
+import logging
 
 urlpatterns = patterns('',
     # Examples:
@@ -11,5 +12,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/$','twitter.views.index'),
   #  url(r'^index/(?P<uid>).JPG/$','twitter.views.result'),
-    url(r'^index/(?P<uid>\d+)$','twitter.views.result'),
+    url(r'^index/(?P<uid>\d+)$','twitter.views.result')
 )
