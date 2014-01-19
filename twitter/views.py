@@ -23,20 +23,23 @@ def index(request):
     image_id_users = {}
     global candidates
     twitter_ids = candidates.values()
-    for twitter_id in twitter_ids:
-         if len(list(UserDetail.objects.filter(twitter_id=twitter_id))) > 1:
-             candidate_details = UserDetail.objects.filter(twitter_id=twitter_id).latest("twitter_id")
-             print candidate_details
-             can_id=candidate_details.twitter_id
-             print can_id
-             imageUrl = candidate_details.image_url
-             i=imageUrl.rfind('_')
-             imageUrl=imageUrl[:i]+imageUrl[-4:]
-             image_id_users[can_id] = imageUrl
-    t = loader.get_template('index.html')
-    c = Context({'users':image_id_users})
-    print 'In Index'
-    return HttpResponse(t.render(c))
+    if len(list(UserDetail.objects.all())) > 0:
+        for twitter_id in twitter_ids:
+             if len(list(UserDetail.objects.filter(twitter_id=twitter_id))) > 1:
+                candidate_details = UserDetail.objects.filter(twitter_id=twitter_id).latest("twitter_id")
+                print candidate_details
+                can_id=candidate_details.twitter_id
+                print can_id
+                imageUrl = candidate_details.image_url
+                i=imageUrl.rfind('_')
+                imageUrl=imageUrl[:i]+imageUrl[-4:]
+                image_id_users[can_id] = imageUrl
+        t = loader.get_template('index.html')
+        c = Context({'users':image_id_users})
+        print 'In Index'
+        return HttpResponse(t.render(c))
+    else:
+        return HttpResponse("db empty")
 
 
 def final(uid):
