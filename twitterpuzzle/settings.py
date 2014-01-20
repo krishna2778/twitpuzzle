@@ -14,7 +14,7 @@ import logging
 import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
+print BASE_DIR
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,7 +29,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 TEMPLATE_DIRS = (
-    "/home/krishna/PycharmProjects/twitterpuzzle/templates/"
+    BASE_DIR + "/templates/"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
