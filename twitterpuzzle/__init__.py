@@ -40,7 +40,7 @@ def store_retweeters_details_to_db(selected_id1,retweeters_image_url1,retweeters
 
 sched = Scheduler()
 
-@sched.interval_schedule(minutes=3)
+@sched.interval_schedule(minutes=20)
 def commit_infinitely():
     global candidates_twitter_id
     if(len(candidates_twitter_id) > 0):
