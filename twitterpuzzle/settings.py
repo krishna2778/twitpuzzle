@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'z@26g93x38cqb+6nanz0bh-2y-)_evq+d93=_=x103nkge)w3x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 TEMPLATE_DIRS = (
     "/home/krishna/PycharmProjects/twitterpuzzle/templates/"
