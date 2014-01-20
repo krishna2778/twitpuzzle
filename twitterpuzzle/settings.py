@@ -26,7 +26,7 @@ SECRET_KEY = 'z@26g93x38cqb+6nanz0bh-2y-)_evq+d93=_=x103nkge)w3x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 TEMPLATE_DIRS = (
     "/home/krishna/PycharmProjects/twitterpuzzle/templates/"
@@ -75,11 +75,8 @@ WSGI_APPLICATION = 'twitterpuzzle.wsgi.application'
 #    }
 #}
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        }
-}
+
+DATABASES['default'] =  dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

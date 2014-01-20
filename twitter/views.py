@@ -43,17 +43,8 @@ def index(request):
 
 
 def final(uid):
-    #retweeters_details=RetweetersUserDetail.objects.filter(selected_users_id=selected_user_id).latest("selected_users_id")
-    #retweeters_image=retweeters_details.retweeters_image_url
-    #followers_count=retweeters_details.retweeters_followers_number
-    #twitter = new_get_token()
-    #tid = twitter.get_user_timeline(user_id=uid,exclude_replies=True,include_rts=False)[0]['id']
-    #print tid
-    #ls = twitter.get_retweeters_ids(id=tid)
-    #print ls
     follow = {}
     print 'follow = {}'
-
     imgFormat=['_normal','_mini','_bigger']
     retweeters_details = []
     selected_user_id=uid
@@ -67,17 +58,6 @@ def final(uid):
                 url = "".join(url.split(delimeter))
                 break
         follow[url] = details.retweeters_followers_number
-
-    #for uid in ls['ids']:
-    #    retweeters.append(twitter.show_user(user_id=uid))
-    #for user in retweeters:
-    #    url=user['profile_image_url_https']
-    #    for ft in imgFormat:
-    #        if ft in url:
-    #            url="".join(url.split(ft))
-    #            break
-    #    count=user['followers_count']
-    #    follow[url]=count
     rank_list = sorted(follow.items(), key=operator.itemgetter(1))
     select_user=UserDetail.objects.filter(twitter_id=selected_user_id).latest("twitter_id")
     select_user_image=select_user.image_url
