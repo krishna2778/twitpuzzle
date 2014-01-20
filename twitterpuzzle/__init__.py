@@ -65,5 +65,5 @@ def commit_infinitely():
 
 
 if not started:
-    #sched.start()
+    sched.start()
     started = True
