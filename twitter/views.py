@@ -35,6 +35,9 @@ def index(request):
                 i=imageUrl.rfind('_')
                 imageUrl=imageUrl[:i]+imageUrl[-4:]
                 image_id_users[can_id] = imageUrl
+        print "***************************"
+        print image_id_users
+        print "***************************"
         t = loader.get_template('index.html')
         c = Context({'users':image_id_users})
         print 'In Index'
