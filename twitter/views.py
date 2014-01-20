@@ -23,6 +23,7 @@ def index(request):
     image_id_users = {}
     global candidates
     twitter_ids = candidates.values()
+    print list(UserDetail.objects.all())
     if len(list(UserDetail.objects.all())) > 0:
         for twitter_id in twitter_ids:
              if len(list(UserDetail.objects.filter(twitter_id=twitter_id))) > 1:
